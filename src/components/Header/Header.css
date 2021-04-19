@@ -1,0 +1,19 @@
+
+.banner{
+    background-image: url('../../images/auto.jpg');
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.banner-info{
+    padding-top: 150px;
+    padding-bottom: 200px;
+}
+.banner-info h1{
+    text-align: center;
+    color: rgb(111, 185, 121);
+}
+.banner-info p{
+    color: white;
+    text-align: center;
+}
