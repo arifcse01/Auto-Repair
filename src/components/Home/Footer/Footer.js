@@ -1,8 +1,8 @@
 import React from 'react';
-import facebook from '../../icons/facebook.png';
-import youtube from '../../icons/youtube.png';
-import twitter from '../../icons/twitter.png';
-import linkedin from '../../icons/linkedin.png';
+import facebook from '../../../icons/facebook.png';
+import youtube from '../../../icons/youtube.png';
+import twitter from '../../../icons/twitter.png';
+import linkedin from '../../../icons/linkedin.png';
 
 const Footer = () => {
     const footerStyle = {

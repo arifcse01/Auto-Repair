@@ -27,15 +27,14 @@ const AddReview = () => {
         })
     }
 
-
     return (
-        <div className="container mt-5">
+        <div className="container-fluid">
             <div className="row">
                 <div className="col-md-4">
                     <Sidebar></Sidebar>
                 </div>
-                <div className="col-md-8">
-                    <h4>Review</h4>
+                <div className="col-md-8 pt-3">
+                    <h4>Add Review</h4>
                     <form onSubmit={handleSubmit} className='shadow p-3 rounded bg-gray'>
                         <div>                            
                             <input onBlur={handleOnBlur} className="form-control mt-3" name="title" type="text" placeholder='Your Name' id="name" />

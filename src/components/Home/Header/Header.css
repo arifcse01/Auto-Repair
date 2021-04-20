@@ -1,8 +1,8 @@
 
 .banner{
-    background-image: url('../../images/auto.jpg');
-    background-position: center;
-    background-size: 100% auto;
+    background-image: url('../../../images/auto.jpg');
+    background-position: center center;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 .banner-info{

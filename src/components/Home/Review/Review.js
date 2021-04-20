@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import SingleReview from '../SingleReview/SingleReview';
+import SingleReview from '../../SingleReview/SingleReview';
 
 
 const Review = () => {
@@ -11,9 +11,9 @@ const Review = () => {
             .then(result => setReviews(result))
     }, [])
     return (
-        <section className="mt-5">
+        <section className="mp-5">
             <div className="container">
-                <h2 className="text-center">Reviews</h2>
+                <h3 className="text-center">Reviews</h3>
                 <div className="row">
                     {
                         reviews.map(review => <SingleReview review={review} key={review._id}></SingleReview>)

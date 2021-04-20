@@ -18,12 +18,15 @@ const Header = () => {
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Our Services</a>
+                            </li>                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Reviews</a>                                
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Our Team</a>                                
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Testimonials</a>                                
+                                <Link class="nav-link" to="/orderList">Dashboard</Link>                                
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Contact us</a>                                
