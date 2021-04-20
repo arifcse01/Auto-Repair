@@ -13,7 +13,7 @@ const AddService = () => {
 
     const handleSubmit = (e) =>{
         e.preventDefault();
-        fetch('http://localhost:4500/addService', {
+        fetch('https://calm-beyond-04420.herokuapp.com/addService', {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newService)

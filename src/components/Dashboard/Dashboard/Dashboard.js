@@ -8,7 +8,7 @@ const Dashboard = () => {
     const [order, setOrder] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:4500/order/${id}`)
+        fetch(`https://calm-beyond-04420.herokuapp.com/order/${id}`)
             .then(res => res.json())
             .then(result => setOrder(result))
     }, [id])
@@ -19,7 +19,7 @@ const Dashboard = () => {
     const handleAddOrder = (e) =>{
         const newOrder = {...loggedInUser, ...order}
         e.preventDefault();
-        fetch('http://localhost:4500/addOrder', {
+        fetch('https://calm-beyond-04420.herokuapp.com/addOrder', {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newOrder)

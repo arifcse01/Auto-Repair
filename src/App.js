@@ -16,12 +16,13 @@ import OrderList from './components/Dashboard/OrderList/OrderList';
 import AddService from './components/Dashboard/AddService/AddService';
 import ManageServices from './components/Dashboard/ManageServices/ManageServices';
 import AllOrderList from './components/Dashboard/AllOrderLIst/AllOrderList';
+import NotFound from './components/NotFound/NotFound';
 
 export const UserContext = createContext();
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
-  
+
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]} >
       <Router>
@@ -53,6 +54,9 @@ function App() {
           <Route path="/login">
             <Login></Login>
           </Route>
+         <Route path="*">
+         <NotFound></NotFound>
+         </Route>
         </Switch>
       </Router>
       

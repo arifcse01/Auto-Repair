@@ -5,7 +5,7 @@ import Sidebar from '../Sidebar/Sidebar';
 const ManageServices = () => {
     const [services, setServices] = useState([]);
     useEffect(() =>{
-        fetch('http://localhost:4500/services')
+        fetch('https://calm-beyond-04420.herokuapp.com/services')
         .then(res => res.json())
         .then(data => setServices(data));
     }, [])

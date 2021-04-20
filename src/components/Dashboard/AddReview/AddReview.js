@@ -15,7 +15,7 @@ const AddReview = () => {
 
     const handleSubmit =(e) =>{
         e.preventDefault();
-        fetch('http://localhost:4500/addReview', {
+        fetch('https://calm-beyond-04420.herokuapp.com/addReview', {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(review)

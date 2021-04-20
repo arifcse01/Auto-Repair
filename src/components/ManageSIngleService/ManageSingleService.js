@@ -7,7 +7,7 @@ const ManageSingleService = (props) => {
     const history = useHistory();
 
     const handleDeleteService = () => {
-        fetch(`http://localhost:4500/deleteService/${_id}`, {
+        fetch(`https://calm-beyond-04420.herokuapp.com/deleteService/${_id}`, {
             method: "DELETE",
         })
             .then(res => res.json())
