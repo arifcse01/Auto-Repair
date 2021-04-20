@@ -13,7 +13,7 @@ const ManageSingleService = (props) => {
             .then(res => res.json())
             .then(data => {
                 alert("delete successfully");
-                history.push('/manageServices');
+                history.replace('/');
             })
     }
 

@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router';
 import Sidebar from '../Sidebar/Sidebar';
 
 const AddService = () => {
     const [newService, setNewService] = useState({});
-
+    
+    const history = useHistory();
 
     const handleOnBlur = (e) =>{
         const service = newService;
@@ -20,7 +22,8 @@ const AddService = () => {
         })
         .then(res => res.json())
         .then(result => {
-            alert("Service Added Successfully")
+            alert("Service Added Successfully");
+            history.replaceState('/');
         })
     }
 
