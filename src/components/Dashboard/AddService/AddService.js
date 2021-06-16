@@ -23,7 +23,7 @@ const AddService = () => {
         .then(res => res.json())
         .then(result => {
             alert("Service Added Successfully");
-            history.replaceState('/');
+            history.replace('/');
         })
     }
 
